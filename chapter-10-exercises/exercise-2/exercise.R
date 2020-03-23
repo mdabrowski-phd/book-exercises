@@ -53,10 +53,10 @@ name_lowest_raise <- salaries[salaries$adjustments == lowest_raise, "employees"]
 average_change <- mean(salaries$adjustments)
 
 # For people who did not get a raise, how much money did they lose on average?
-
+average_lost <- mean(salaries[salaries$raise == FALSE, "adjustments"])
 
 ## Consider: do the above averages match what you expected them to be based on 
 ## how you generated the salaries?
 
 # Write a .csv file of your salary data to your working directory
-
+write.csv(salaries, "salaries.csv")
