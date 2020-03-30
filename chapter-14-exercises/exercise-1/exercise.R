@@ -6,7 +6,6 @@
 #install.packages("jsonlite")
 library("httr")
 library("jsonlite")
-library("dplyr")
 
 # Create a variable base_uri that stores the base URI (as a string) for the 
 # Github API (https://api.github.com)
