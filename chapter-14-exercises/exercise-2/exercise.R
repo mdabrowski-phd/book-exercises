@@ -29,7 +29,7 @@ base_uri <- "https://api.nytimes.com/svc/movies/v2/"
 endpoint <- "reviews/search.json"
 
 resource_uri <- paste0(base_uri, endpoint)
-query_params <- list(api-key = nyt_api_key, query = movie_name)
+query_params <- list("api-key" = nyt_api_key, query = movie_name)
 
 # Send the HTTP Request to download the data
 # Extract the content and convert it from JSON
